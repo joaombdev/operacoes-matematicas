@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #181818;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header {
+    background-color: #131313;
+}
+
+header span {
+    color: #FFF;
+}
+
+.logo h1 {
+    color: rgba(255, 255, 255, 0.842);
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+main * {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.questao {
+    padding-bottom: 7em;
+}
+
+input, button {
+    color: black;
+}
+
+footer {
+    background-color: #1e1e1e;
+    margin-top: 100%;
+    display: flex;
+    justify-content: space-around;
+}

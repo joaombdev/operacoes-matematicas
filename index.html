@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Home</title>
+    <meta name="author" content="Code made by:">
+    <meta name="description" content="">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Código feito por</h1><img src="https://i.ibb.co/PDgZ83G/logo-jo-o-dev-2.png" alt="Logo">
+        </div>
+        <nav class="social">
+            <span class="material-icons">face</span>
+            <span class="material-icons"></span>
+            <span class="material-icons"></span>
+            <span class="material-icons"></span>
+            <span class="material-icons">menu</span>
+        </nav>
+        <section class="floating-menu"></section>
+    </header>
+
+    <main>
+        <!-- Cálculo de média aritmética -->
+        <div class="questao">
+            <div class="text">
+                <h3>Calcule a média aritmética</h3>
+                <p>Preencha todos os campos</p>
+            </div>
+            <div class="inputs">
+                <input type="number" name="" id="qnt-num" placeholder="Quantidades de números">
+                <input type="number" name="" id="num">
+                <button onclick="media()">Calcular</button>
+            </div>
+            <div class="resposta"></div>
+        </div>
+
+        <!-- Cálculo de área de um retângulo -->
+        <section class="questao">
+            <div class="text">
+                <h3>Cálculo de área de um retângulo</h3>
+                <p>Digite um valor para o lado e outro para a altura (sem convertor de unidades de comprimento)</p>
+            </div>
+            <div class="inputs">
+                <input type="number" name="" id="lado" placeholder="Lado (x)">
+                <input type="number" name="" id="altura-retangulo" placeholder="Altura (h)">
+                <button onclick="area_retangulo()">Calcular</button>
+            </div>
+            <div class="resposta">
+                <h4>Resposta: <span class="area-retangulo"></span></h4>
+            </div>
+        </section>
+
+        <!-- Cálculo com 4 operações básicas (+ - × ÷) -->
+        <section class="questao">
+            <div class="text">
+                <h3>4 operações básicas (+ - × ÷) feitas com 2 números.</h3>
+                <p>Digite dois números</p>
+            </div>
+            <div class="inputs">
+                <input type="number" name="" id="num1" placeholder="Número 1">
+                <input type="number" name="" id="num2" placeholder="Número 2">
+                <button onclick="calcular()">Calcular</button>
+            </div>
+            <div class="resposta">
+                <h4 id="soma"></h4>
+                <h4 id="menos"></h4>
+                <h4 id="mult"></h4>
+                <h4 id="divi"></h4>
+            </div>
+        </section>
+
+        <!-- CALCULADORA DE CONVERSÃO DE TEMPO (APENAS HORAS, MIN E SEG) -->
+        <section class="questao">
+            <div class="text">
+                <h3>Cálculo que transforma uma quantidade de horas, minutos e segundos para apenas uma medida de tempo.
+                </h3>
+                <p>1 dia = 24 horas</p>
+                <p>1 hora = 60 minutos</p>
+                <p>1 minuto = 60 segundos</p>
+            </div>
+            <div class="inputs">
+                <input type="number" name="" id="hora" placeholder="Quantidade de horas">
+                <input type="number" name="" id="min" placeholder="Quantidade de minutos">
+                <input type="number" name="" id="seg" placeholder="Quantidade de segundos">
+                <button onclick="horas()">Para horas</button>
+                <button onclick="minutos()">Para minutos</button>
+                <button onclick="segundos()">Para segundos</button>
+            </div>
+            <div class="resposta">
+                <p class="tempo"></p>
+            </div>
+        </section>
+
+        <!-- Cálculo do quadrado da soma de dois termos -->
+        <section class="questao">
+            <div class="text">
+                <h3>Cálculo de uma equação (a + b)²</h3>
+                <p>Necessário que preencha todos os campos, apenas algarismos e números sem cálculos</p>
+            </div>
+            <div class="inputs">
+                <input type="number" name="" id="a" placeholder="Variável a">
+                <input type="number" name="" id="b" placeholder="Variável b">
+                <button onclick="produtos()">Calcular</button>
+            </div>
+            <div class="resposta">
+                <p class="produtos"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="logo">
+            <a class="joao-logo" href="https://joaombdev.github.io/portifolio-joaocarloslima/" target="=blank"><img
+                    src="https://i.ibb.co/PDgZ83G/logo-jo-o-dev-2.png" alt="Logo criador"></a>
+        </div>
+        <a href="https://github.com/joaombdev" target="=blank"><img src="" alt="github"></a>
+        <a href="https://www.linkedin.com/in/joaombdev/" target="=blank"><img src="" alt="linkedin"></a>
+    </footer>
+</body>
+
+</html>
