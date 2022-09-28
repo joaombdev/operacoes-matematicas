@@ -1,3 +1,41 @@
+// Dark Mode with HTML, CSS, and JavaScript / Switching between Dark and Light Themes / HTML, CSS, JS
+/*
+const toggle = document.querySelector('.toggle');
+toggle.addEventListener('click', ()=> {
+    container.classList.toggle('dark')?(toggle.forstElementChild.className='far-fa-moon'):(toggle.forstElementChild.className='far-fa-sun'):
+});
+*/
+
+// Calculo de IMC
+function imc() {
+    let massa = parseFloat(document.getElementById('massa').value);
+    let altura = parseFloat(document.getElementById('altura').value);
+    let imc = massa / (altura ** 2);
+
+    if (imc < 17) {
+        document.querySelector('.imc').innerHTML = 'Muito abaixo do peso'
+        console.log(imc + ' = Muito abaixo do peso')
+    } else if (imc >= 17 || imc < 18.49) {
+        document.querySelector('.imc').innerHTML = 'Abaixo do peso'
+        console.log(imc + ' = Abaixo do peso')
+    } else if (imc >= 18.50 || imc < 24.99) {
+        document.querySelector('.imc').innerHTML = 'Peso na faixa boa'
+        console.log(imc + ' = Peso certo')
+    } else if (imc >= 25 || imc < 29.99) {
+        document.querySelector('.imc').innerHTML = 'Acima do peso'
+        console.log(imc + ' = sobrepeso')
+    } else if (imc >= 30 || imc < 34.99) {
+        document.querySelector('.imc').innerHTML = 'Faixa de obesidade'
+        console.log(imc + ' = obesidade')
+    } else if (imc >= 35 || imc < 39.99) {
+        document.querySelector('.imc').innerHTML = 'Faixa de obesidade severa'
+        console.log(imc + ' = Obesidade severa')
+    } else if (imc > 40) {
+        document.querySelector('.imc').innerHTML = 'Faixa de obesidade morbida'
+        console.log(imc + ' = Obesidade morbida')
+    }
+}
+
 // Média aritmética
 function media() {
     var qnt_num = parseInt(document.getElementById('qnt-num').value)
