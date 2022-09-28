@@ -7,6 +7,56 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* THEME DE CORES PARA DARK THEME / DARK MODE */
+/* html */
+:root {
+    --bg-color: #181818;
+    --header: #131313;
+    --color-black: #000;
+    --color-white: #FFF;
+    --hover: #F37D3D;
+    --footer: #1e1e1e;
+    --linkedin: #0A66C2;
+    --github: #010409;
+}
+
+/* THEME DE CORES PARA LIGHT THEME / LIGHT MODE */
+/* html[data-theme="light"] */
+.light-mode:root {
+    --bg-color: #E7E7E7;
+    --header: #D9D9D9;
+    --color-black: #000;
+    --color-white: #FFF;
+    --hover: #F37D3D;
+    --footer: #1e1e1e;
+    --linkedin: #0A66C2;
+    --github: #010409;
+}
+
+/* THEME DE CORES PARA GREY THEME / GREY MODE */
+.grey-mode:root {
+    --bg-color: #E7E7E7;
+    --header: #D9D9D9;
+    --color-black: #000;
+    --color-white: #FFF;
+    --hover: #F37D3D;
+    --footer: #1e1e1e;
+    --linkedin: #0A66C2;
+    --github: #010409;
+}
+
+/* THEME DE CORES PARA TERMINAL THEME / TERMINAL MODE */
+.terminal-mode:root {
+    --bg-color: #E7E7E7;
+    --header: #D9D9D9;
+    --color-black: #000;
+    --color-white: #FFF;
+    --hover: #F37D3D;
+    --footer: #1e1e1e;
+    --linkedin: #0A66C2;
+    --github: #010409;
+}
+
 body {
     background-color: #181818;
 }
@@ -23,6 +73,13 @@ header {
 
 header span {
     color: #FFF;
+    margin: .3em;
+    padding: .6em;
+    cursor: pointer;
+}
+
+header span:hover {
+    padding: .8em;
 }
 
 .logo h1 {
@@ -43,17 +100,38 @@ main * {
     color: whitesmoke;
 }
 
+.primeira-questao {
+    padding: 5em 0 7em 0;
+}
+
 .questao {
     padding-bottom: 7em;
 }
 
-input, button {
+input,
+button {
     color: black;
 }
 
 footer {
+    padding: 2em;
     background-color: #1e1e1e;
-    margin-top: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+footer svg {
+    width: 3em;
+}
+
+footer a:visited {
+    color: white;
+}
+
+.linkedin:hover {
+    color: #0A66C2;
+}
+
+.github:hover {
+    color: #010409;
 }
